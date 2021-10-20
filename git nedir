@@ -1,0 +1,85 @@
+Git nedir?
+Git ücretsiz ve en çok kullanılan bir sürüm kontrol sistemidir.
+
+Ayrıca Subversion, CVS, Bitkeeper, Mercurial vb. sürüm kontrol sistemleri de mevcuttur.
+
+Git’in diğerlerinden farkı ücretsiz olması, yaygın kullanımı, Github ve Gitlab gibi yaygın kullanılan sürüm kontrol sitemlerinde kullanılıyor olması diyebiliriz.
+
+Git dağıtık bir sürüm kontrol sistemidir.
+
+Dağıtık sürüm kontrol sistemleri dosyayı hem çalışma alanında hem de depo olarak kullanılan uzak sunucularda saklar.
+
+Her güncelleme sonrası çalışma alanında yeni bir sürüm oluşturulabilir.
+
+Gerekli ekleme, düzenleme ve silme işlemi tamamlandıktan sonra çalışma alanında bulunan dosyalar depo olarak kullanılan uzak sunuculara gönderilir.
+
+Böylece her ekleme, düzenleme ve silme için bir kopyanın alınabildiği, ekipler arası koordineli bir yazılım geliştirme ortamı sağlanır.
+
+Git kurulumu
+Git sürüm kontrol sistemini kullanabilmek için şuradan ( git-scm.com/downloads ) windows veya mac işletim sistemine ait kurulum dosyalarını indirip klasik kurulum işlemini yapabilirsiniz.
+
+Linux, Unix ve türevi için kurulumu terminal ile yapılabilir.
+
+Örneğin; Debian/Ubuntu kurulumu için aşağıdaki komut kullanılabilir.
+
+sudo apt-get install git
+Kurulum tamamlandıktan sonra Windows ( CMD veya Git Bash ), Linux, Unix, Mac ve türevleri için terminal ekranına aşağıdaki komut yazılarak kurulumun başarılı olup olmadığı ve git sürüm bilgisi kontrolü yapılır.
+
+git --version
+Git ayarları
+Git kurulumu yapıldıktan sonra güncellemelerin kimin tarafından yapıldığı bilgisi için kullanıcı adı ve e-posta adresini kayıt etmek faydalı olacaktır.
+
+Gerekli kullanıcı adı ve e-posta adresi kayıt edildikten sonra artık güncellemenin sizin tarafınızdan yapıldığı dosya bilgisine bakılarak kolayca bulunur.
+
+Git ayarları config komutu ile yapılır.
+
+git config
+Kullanıcı adını değiştirmek için aşağıdaki komut kullanılır.
+
+git config --global user.name "Yusuf SEZER"
+Kullanıcı e-posta adresini değiştirmek aşağıdaki komut kullanılır.
+
+git config --global user.email "yusufsezer@mail.com"
+Ayarları yaparken global parametresi eklenmezse sadece üzerinde çalışılan proje için ayar uygulanacak herhangi bir proje açık değilse hata verecektir.
+
+Tüm ayarları listelemek için aşağıdaki komut kullanılır.
+
+git config --list
+Git proje oluşturma
+Git projesi oluşturmak ve Git komutları ile işlem yapmak için bash ve cmd komutları ile ilgili bilgi sahibi olmak faydalı olacaktır.
+
+Örneğin; Mevcut klasörün yolu bash
+
+pwd
+cmd
+
+echo %cd%
+komutu ile bulunur.
+
+Mevcut klasörden başka bir klasöre aşağıdaki komut ile geçilir.
+
+cd
+Mevcut klasör içindeki dosyalar bash
+
+ls
+cmd
+
+dir
+listelenir.
+
+Yeni bir klasör oluşturmak için
+
+mkdir klasoradi
+klasör silmek için
+
+rmdir klasoradi
+kulanılır.
+
+Git projesi oluşturmak için bir proje klasörü oluşturmak faydalı olacaktır.
+
+Oluşturulan proje klasörüne cd komut ile geçiş yaptıktan sonra
+
+git init
+ile git projesi oluşturulur.
+
+Git klasör içinde gizli olarak proje bilgileri, proje sürümleri gibi bilgilerin olduğu .git isimli klasör oluşturur.
